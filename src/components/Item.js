@@ -1,8 +1,11 @@
-function Item(props)
-{
-    const itemname=props.name
+function Item(props) {
+    const itemname = props.name
     return (
-        <p>{itemname}</p>
+        <div>
+            <p>{itemname}</p>
+            {props.children}
+        </div>
+
     )
 }
 
